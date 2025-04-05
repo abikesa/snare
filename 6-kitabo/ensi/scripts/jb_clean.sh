@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Older version of the script
+# Post-build script for cleaning up the _build/html directory
 
 mkdir -p _build/html/pdfs _build/html/figures _build/html/media _build/html/testbin  _build/html/nis # _build/html/testbin_dec2024 _build/html/data
 cp -r figures/* _build/html/figures/
@@ -11,6 +11,8 @@ cp -r media/* _build/html/media/
 cp -r testbin/* _build/html/testbin
 # cp -r testbin_dec2024/* _build/html/testbin_dec2024
 cp -r nis/* _build/html/nis
+cp ukusoma.html _build/html/
+
 
 
 
